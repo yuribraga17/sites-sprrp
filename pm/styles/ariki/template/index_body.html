@@ -1,0 +1,132 @@
+<!-- INCLUDE overall_header.html -->
+
+<div id="wrap-subhead-main">
+	<div class="chunk">
+		<div class="wrap-subhead-main">
+
+			<ul id="breadcrumbs-main" role="menubar">
+
+				<li class="font-icon responsive-menu dropdown-container<!-- IF not S_DISPLAY_QUICK_LINKS and not S_DISPLAY_SEARCH --> hidden<!-- ENDIF -->" data-skip-responsive="true">
+					<a href="#" class="responsive-menu-link dropdown-trigger"><i class="fa fa-bars"></i></a>
+					<div class="dropdown hidden">
+						<div class="pointer"><div class="pointer-inner"></div></div>
+						<ul class="dropdown-contents" role="menu">
+							<!-- EVENT navbar_header_quick_links_before -->
+
+							<!-- IF S_DISPLAY_SEARCH -->
+								<li class="separator"></li>
+								<!-- IF S_REGISTERED_USER -->
+									<li class="font-icon icon-search-self"><a href="{U_SEARCH_SELF}" role="menuitem"><i class="fa fa-history"></i>{L_SEARCH_SELF}</a></li>
+								<!-- ENDIF -->
+								<!-- IF S_USER_LOGGED_IN -->
+									<li class="font-icon icon-search-new"><a href="{U_SEARCH_NEW}" role="menuitem"><i class="fa fa-file-text"></i>{L_SEARCH_NEW}</a></li>
+								<!-- ENDIF -->
+								<!-- IF S_LOAD_UNREADS --> 
+									<li class="font-icon icon-search-unread"><a href="{U_SEARCH_UNREAD}" role="menuitem"><i class="fa fa-file"></i>{L_SEARCH_UNREAD}</a></li>
+								<!-- ENDIF -->
+								<li class="font-icon icon-search-unanswered"><a href="{U_SEARCH_UNANSWERED}" role="menuitem"><i class="fa fa-file-o"></i>{L_SEARCH_UNANSWERED}</a></li>
+								<li class="font-icon icon-search-active"><a href="{U_SEARCH_ACTIVE_TOPICS}" role="menuitem"><i class="fa fa-fire"></i>{L_SEARCH_ACTIVE_TOPICS}</a></li>
+							<!-- ENDIF -->
+							<li class="separator site-menu"></li>
+
+							<!-- INCLUDE site_menu.html -->
+
+							<!-- EVENT navbar_header_quick_links_after -->
+						</ul>
+					</div>
+				</li>
+
+				<!-- INCLUDE breadcrumbs.html -->
+			</ul>
+
+			<!-- EVENT index_body_markforums_before -->
+			<!-- IF U_MARK_FORUMS -->
+				<div id="subhead-minilist">
+					<a href="{U_MARK_FORUMS}" class="mark-read rightside" accesskey="m" data-ajax="mark_forums_read">{L_MARK_FORUMS_READ}</a>
+				</div>
+			<!-- ENDIF -->
+			<!-- EVENT index_body_markforums_after -->
+
+		</div>
+	</div>
+</div>
+
+<div id="wrap-body">
+	<div class="chunk">
+
+		<!-- EVENT ar_mchat -->
+
+		<div id="forumlist">
+
+			<div id="forumlist-inner">
+
+				<!-- INCLUDE forumlist_body.html -->
+
+				<!-- EVENT index_body_forumlist_body_after -->
+
+				<!-- EVENT index_body_stat_blocks_before -->
+
+				<!-- IF S_DISPLAY_ONLINE_LIST and NEWEST_USER -->
+					<div class="stat-block online-list">
+						<!-- IF U_VIEWONLINE --><h3><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a></h3><!-- ELSE --><h3>{L_WHO_IS_ONLINE}</h3><!-- ENDIF -->
+						<p>
+							<!-- EVENT index_body_block_online_prepend -->
+							{TOTAL_USERS_ONLINE} ({L_ONLINE_EXPLAIN})<br />{RECORD_USERS}<br /> <br />{LOGGED_IN_USER_LIST}
+							<!-- IF LEGEND --><br /><em>{L_LEGEND}{L_COLON} {LEGEND}</em><!-- ENDIF -->
+							<!-- EVENT index_body_block_online_append -->
+						</p>
+						<p id="online-list-stat">
+							<!-- EVENT index_body_block_stats_prepend -->
+							{TOTAL_POSTS} &bull; {TOTAL_TOPICS} &bull; {TOTAL_USERS} &bull; {NEWEST_USER}
+							<!-- EVENT index_body_block_stats_append -->
+						</p>
+					</div>
+				<!-- ENDIF -->
+
+				<!-- IF S_DISPLAY_ONLINE_LIST and not NEWEST_USER -->
+					<div class="stat-block online-list">
+						<!-- IF U_VIEWONLINE --><h3><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a></h3><!-- ELSE --><h3>{L_WHO_IS_ONLINE}</h3><!-- ENDIF -->
+						<p>
+							<!-- EVENT index_body_block_online_prepend -->
+							{TOTAL_USERS_ONLINE} ({L_ONLINE_EXPLAIN})<br />{RECORD_USERS}<br /> <br />{LOGGED_IN_USER_LIST}
+							<!-- IF LEGEND --><br /><em>{L_LEGEND}{L_COLON} {LEGEND}</em><!-- ENDIF -->
+							<!-- EVENT index_body_block_online_append -->
+						</p>
+					</div>
+				<!-- ENDIF -->
+
+				<!-- EVENT index_body_birthday_block_before -->
+				<!-- IF S_DISPLAY_BIRTHDAY_LIST and .birthdays -->
+					<div class="stat-block birthday-list">
+						<h3>{L_BIRTHDAYS}</h3>
+						<p>
+							<!-- EVENT index_body_block_birthday_prepend -->
+							<!-- IF .birthdays -->{L_CONGRATULATIONS}{L_COLON} <strong><!-- BEGIN birthdays -->{birthdays.USERNAME}<!-- IF birthdays.AGE !== '' --> ({birthdays.AGE})<!-- ENDIF --><!-- IF not birthdays.S_LAST_ROW -->, <!-- ENDIF --><!-- END birthdays --></strong><!-- ELSE -->{L_NO_BIRTHDAYS}<!-- ENDIF -->
+							<!-- EVENT index_body_block_birthday_append -->
+						</p>
+					</div>
+				<!-- ENDIF -->
+
+				<!-- IF NEWEST_USER and not S_DISPLAY_ONLINE_LIST -->
+					<div class="stat-block statistics">
+						<h3>{L_STATISTICS}</h3>
+						<p>
+							<!-- EVENT index_body_block_stats_prepend -->
+							{TOTAL_POSTS} &bull; {TOTAL_TOPICS} &bull; {TOTAL_USERS} &bull; {NEWEST_USER}
+							<!-- EVENT index_body_block_stats_append -->
+						</p>
+					</div>
+				<!-- ENDIF -->
+
+				<!-- EVENT index_body_stat_blocks_after -->
+
+			</div>
+
+		</div>
+
+		<!-- EVENT ar_mchat_b -->
+
+	</div>
+</div>
+	
+<!-- INCLUDE overall_footer.html -->

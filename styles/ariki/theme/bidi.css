@@ -1,0 +1,1143 @@
+/*
+	Table of contents - bidi.css file
+
+	1. Main.css
+	2. Forms.css
+	3. Control_panel.css
+	4. Structure.css
+	5. Buttons.css
+	6. Headers.css
+	7. Footers.css
+	8. Responsive.css
+	9. Colours.css
+	10. Chosen.css
+*/
+.rtl {
+  text-align: right;
+}
+.rtl p.right {
+  text-align: left;
+}
+.rtl .side-login #username,
+.rtl .side-login #password,
+.rtl .side-login #remember-me {
+  float: right;
+}
+.rtl .side-login #remember-me input {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.rtl .logo {
+  float: right;
+}
+.rtl #site-description {
+  float: right;
+}
+.rtl ul.linklist > li {
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+.rtl ul.linklist > li.rightside,
+.rtl p.rightside,
+.rtl a.rightside {
+  float: left;
+  margin-right: 20px;
+  margin-left: 0;
+  text-align: left;
+}
+.rtl ul.leftside {
+  float: right;
+  margin-left: 5px;
+  margin-right: 0;
+  text-align: right;
+}
+.rtl ul.rightside {
+  float: left;
+  margin-left: -5px;
+  margin-right: 5px;
+  text-align: left;
+}
+.rtl ul.linklist.bulletin > li:before {
+  padding-left: 4px;
+  padding-right: 0;
+}
+.rtl .dropdown li {
+  text-align: right;
+}
+.rtl table.table1 thead th {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.rtl table.table1 thead th span {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.rtl table.table1 tbody td {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.rtl table.table1 tbody th {
+  padding-left: 0;
+  padding-right: 20px;
+  text-align: right;
+}
+.rtl table.table1 .name {
+  text-align: right;
+}
+.rtl table.table1 .joined {
+  text-align: right;
+}
+.rtl table.table1 .active {
+  text-align: right;
+}
+.rtl table.table1 .info {
+  text-align: right;
+}
+.rtl table.table1 thead .autocol {
+  padding-left: 0;
+  padding-right: 1em;
+}
+.rtl table.table1 span.rank-img {
+  float: left;
+}
+.rtl table.info tbody th {
+  text-align: left;
+}
+.rtl .column1 {
+  float: right;
+  clear: right;
+  padding-left: 10px;
+  padding-right: 0;
+}
+.rtl .column2 {
+  float: left;
+  clear: left;
+  padding-left: 0;
+  padding-right: 10px;
+}
+.rtl .left-box {
+  float: right;
+  text-align: right;
+}
+.rtl .right-box {
+  float: left;
+  text-align: left;
+}
+.rtl dl.details dt {
+  float: right;
+  clear: right;
+  text-align: left;
+}
+.rtl dl.details dd {
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 20px;
+  float: right;
+}
+.rtl fieldset.fields1 dd.recipients {
+  clear: right;
+  margin-right: 0;
+}
+.rtl fieldset.fields1 dd.recipients input.button2 {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.rtl fieldset.fields1 ul.recipients input.button2 {
+  margin-left: 0;
+}
+.rtl fieldset.fields1 dl.pmlist dd.recipients {
+  margin-right: 0 !important;
+}
+.rtl .pagination {
+  float: left;
+  text-align: left;
+}
+.rtl .pagination > ul {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.rtl .pagination > ul > li:first-child a,
+.rtl .pagination > ul > li:first-child span {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.rtl .pagination > ul > li:last-child a,
+.rtl .pagination > ul > li:last-child span {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.rtl .row .pagination {
+  float: left;
+  padding-left: 0;
+  padding-right: 4px;
+}
+.rtl .row .pagination ul li {
+  padding-left: 0;
+  padding-right: 1px;
+}
+.rtl .phpbb_alert .alert_close {
+  float: left;
+}
+.rtl .phpbb_alert .alert_close:after {
+  float: left;
+  margin-left: -20px;
+  margin-right: 0;
+  border-width: 0 1px 1px 0;
+}
+.rtl #darken {
+  left: auto;
+  right: 0;
+}
+.rtl #loading_indicator {
+  margin-left: 0;
+  margin-right: -50px;
+  left: auto;
+  right: -50%;
+}
+.rtl #forum-permissions {
+  float: left;
+  padding-left: 0;
+  padding-right: 5px;
+  margin-left: 0;
+  margin-right: 5px;
+  text-align: left;
+}
+.rtl div.rules ul,
+.rtl div.rules ol {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.rtl p.post-notice {
+  padding-left: 20px;
+  padding-right: 68px;
+}
+.rtl p.post-notice:before {
+  left: 0;
+  right: 20px;
+}
+.rtl .member-search {
+  float: right;
+}
+.rtl .dropdown-extended .header {
+  padding-left: 0;
+  padding-right: 20px;
+  text-align: right;
+}
+.rtl .dropdown-extended .header .header_settings {
+  float: left;
+}
+.rtl .notification_list ul li img {
+  float: right;
+  margin-left: 10px;
+  margin-right: 0;
+}
+.rtl .notification_list p.notification-time {
+  text-align: right;
+}
+.rtl .notification_list div.notifications {
+  margin-left: 0;
+  margin-right: 50px;
+}
+.rtl .notification_text {
+  margin-right: 0;
+}
+.rtl #quick-links {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.rtl .compact .icon-notification > a > strong,
+.rtl .compact .icon-pm > a > strong {
+  padding-left: 0;
+  padding-right: 2px;
+}
+.rtl ul.topiclist dt,
+.rtl ul.topiclist dd {
+  float: right;
+}
+.rtl ul.topiclist dt {
+  margin-left: -440px;
+  margin-right: 0;
+}
+.rtl ul.topiclist.missing-column dt {
+  margin-left: -330px;
+  margin-right: 0;
+}
+.rtl ul.topiclist.two-long-columns dt {
+  margin-left: -225px;
+  margin-right: 0;
+}
+.rtl ul.topiclist.two-columns dt {
+  margin-left: -80px;
+  margin-right: 0;
+}
+.rtl ul.topiclist dt .list-inner {
+  margin-left: 440px;
+  margin-right: 0;
+}
+.rtl ul.topiclist.missing-column dt .list-inner {
+  margin-left: 330px;
+  margin-right: 0;
+}
+.rtl ul.topiclist.two-long-columns dt .list-inner {
+  margin-left: 225px;
+  margin-right: 0;
+}
+.rtl ul.topiclist.two-columns dt .list-inner {
+  margin-left: 80px;
+  margin-right: 0;
+}
+.rtl ul.topiclist dfn {
+  left: auto;
+  right: -9999px;
+}
+.rtl .forum-image {
+  float: right;
+  margin-left: 5px;
+  margin-right: 0;
+}
+.rtl li.header dt {
+  margin-left: -440px;
+  margin-right: 0;
+}
+.rtl li.header dt .list-inner {
+  margin-left: 440px;
+  margin-right: 0;
+}
+.rtl li.header dl.icon dt .list-inner {
+  padding-left: 50px;
+  padding-right: 20px;
+}
+.rtl dl.icon {
+  background-position: right 20px top 50%;
+}
+.rtl dl.icon dt {
+  background-position: right 20px top 95%;
+}
+.rtl dl.icon dt .list-inner {
+  padding-left: 0;
+  padding-right: 68px;
+}
+.rtl dl a.icon-link {
+  left: auto;
+  right: 0;
+  margin-left: 0;
+  margin-right: 9px;
+}
+.rtl dl.icon dt ol,
+.rtl dl.icon dt ul {
+  margin-left: 0;
+  margin-right: 1em;
+}
+.rtl dd.redirect {
+  padding-left: 0;
+  padding-right: 190px;
+}
+.rtl .posts-approve {
+  margin-left: 7.5px;
+  margin-right: 0;
+}
+.rtl .topic-ap {
+  margin-left: 7.5px;
+  margin-right: 0;
+}
+.rtl .postprofile {
+  float: left;
+}
+.rtl .postbody {
+  margin-left: 225px;
+  margin-right: 0;
+}
+.rtl .has-profile .postbody h3 {
+  margin-left: 180px;
+  margin-right: 0;
+}
+.rtl .content ul,
+.rtl .content ol {
+  margin-left: 0;
+  margin-right: 3em;
+}
+.rtl .signature {
+  clear: right;
+}
+.rtl .signature ul,
+.rtl .signature ol {
+  margin-left: 0;
+  margin-right: 3em;
+}
+.rtl .notice {
+  clear: right;
+}
+.rtl ul.searchresults {
+  text-align: left;
+}
+.rtl blockquote:after {
+  left: auto;
+  right: -3px;
+}
+.rtl blockquote cite {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.rtl .codebox:after {
+  left: auto;
+  right: -3px;
+}
+.rtl .codebox p {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.rtl blockquote .codebox {
+  margin-right: 0;
+}
+.rtl .attachbox {
+  float: right;
+  clear: right;
+}
+.rtl .attachbox:after {
+  left: auto;
+  right: -3px;
+  transform: none;
+}
+.rtl .attachbox > dt {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.rtl .attachbox dd {
+  clear: right;
+}
+.rtl .attachbox p {
+  clear: right;
+}
+.rtl .attachbox p.stats {
+  clear: right;
+}
+.rtl fieldset.polls dt {
+  text-align: right;
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+}
+.rtl fieldset.polls dd {
+  float: right;
+  border-right: none;
+  padding-left: 0;
+  padding-right: 20px;
+  margin-right: 0;
+}
+.rtl fieldset.polls dd.poll_option_percent {
+  margin-left: 0;
+  margin-right: 20px;
+  float: left;
+}
+.rtl fieldset.polls dd div {
+  text-align: left;
+}
+.rtl .postprofile .avatar {
+  float: right;
+}
+.rtl dd.profile-contact {
+  float: right;
+}
+.rtl .online:before {
+  left: 20px;
+  right: auto;
+}
+.rtl dl.pmlist dd {
+  margin-left: 0 !important;
+  margin-right: 61% !important;
+}
+.rtl .action-bar div.dl_links {
+  padding-left: 0;
+  padding-right: 10px;
+}
+.rtl a {
+  direction: rtl;
+}
+.rtl .dropdown-extended a.mark_read {
+  left: 10px;
+  right: auto;
+}
+.rtl .back2top {
+  text-align: left;
+}
+.rtl a.top {
+  float: left;
+}
+.rtl a.top2 {
+  padding-left: 0;
+  padding-right: 15px;
+}
+.rtl .skiplink {
+  left: auto;
+  right: -999px;
+}
+.rtl a.feed-icon-forum {
+  float: left;
+}
+.rtl .attach-controls {
+  float: left;
+}
+.rtl .attach-name,
+.rtl .attach-comment {
+  text-align: right;
+}
+.rtl .r-lastpost-container {
+  left: 10px;
+  right: auto;
+}
+.rtl #results > .display-actions > .button2 {
+  float: left;
+}
+.rtl .fa-chevron-left:before {
+  content: "\f054";
+}
+.rtl .fa-chevron-right:before {
+  content: "\f053";
+}
+.rtl select {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.rtl option {
+  padding-left: 1em;
+  padding-right: 0;
+}
+.rtl select optgroup option {
+  padding-left: 1em;
+  padding-right: 0;
+}
+.rtl label {
+  padding-left: 20px;
+  padding-right: 0;
+}
+.rtl fieldset dt {
+  float: right;
+  text-align: right;
+}
+.rtl fieldset dd {
+  margin-left: 0;
+  margin-right: 41%;
+}
+.rtl fieldset dd #sk_chosen + select {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.rtl dt label {
+  text-align: right;
+}
+.rtl dd input.button,
+.rtl dd input.button1,
+.rtl dd input.button2,
+.rtl dd input.button3,
+.rtl dd input.inputbox,
+.rtl dd textarea {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.rtl dd select + input,
+.rtl dd select + select {
+  margin-left: 0 !important;
+  margin-right: 20px !important;
+}
+.rtl dd input[type="radio"],
+.rtl dd input[type="checkbox"] {
+  margin-left: 7.5px;
+  margin-right: 0;
+}
+.rtl fieldset.display-options label {
+  padding-left: 20px;
+  padding-right: 0;
+}
+.rtl .display-options #st,
+.rtl .display-options #sk,
+.rtl .display-options #st_chosen,
+.rtl .display-options #sk_chosen,
+.rtl #display-panel #st,
+.rtl #display-panel #sk,
+.rtl #display-panel #sk_chosen {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.rtl #dest_folder {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.rtl fieldset.display-actions {
+  text-align: left;
+}
+.rtl fieldset.display-actions select + input {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.rtl fieldset.forum-selection {
+  float: left;
+}
+.rtl fieldset.forum-selection2 {
+  float: left;
+}
+.rtl #mcp .forum-selection select {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.rtl #format-buttons {
+  margin-left: 250px;
+  margin-right: 0;
+}
+.rtl #message-box {
+  margin-left: 250px;
+  margin-right: 0;
+}
+.rtl #smiley-box {
+  float: left;
+}
+.rtl .button1 + .button1,
+.rtl .button1 + .button2,
+.rtl .button1 + .button3,
+.rtl .button2 + .button1,
+.rtl .button2 + .button2,
+.rtl .button2 + .button3,
+.rtl .button3 + .button1,
+.rtl .button3 + .button2,
+.rtl .button3 + .button3 {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.rtl .search-box {
+  float: right;
+}
+.rtl .search-box .inputbox {
+  float: right;
+  border-radius: 0 3px 3px 0;
+}
+.rtl .search-box button {
+  float: right;
+  border-radius: 3px 0 0 3px;
+}
+.rtl input.search {
+  padding-left: 0;
+  padding-right: 17px;
+}
+.rtl .marking {
+  float: left;
+}
+.rtl .marking a {
+  margin-left: 0;
+  margin-right: 20px;
+  float: right;
+}
+.rtl .marking i {
+  margin-left: 7.5px;
+  margin-right: 0;
+}
+.rtl #check_option + .button2 {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.rtl #cp-menu {
+  float: right;
+}
+.rtl #cp-main {
+  margin-left: 0;
+  margin-right: 270px;
+}
+.rtl #cp-main-inner {
+  float: left;
+}
+.rtl .panel-container .panel ol {
+  margin-left: 0;
+  margin-right: 40px;
+}
+.rtl .panel-container .panel li.header dt {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.rtl .panel-container .panel li.header .list-inner {
+  margin-left: 0;
+  margin-right: -20px;
+}
+.rtl .panel-container .panel dd.mark {
+  padding-left: 20px;
+  padding-right: 0;
+}
+.rtl .panel-container table.table1 thead th:first-child {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.rtl .panel-container table.table1 thead th:last-child {
+  padding-left: 20px;
+  padding-right: 0;
+}
+.rtl .panel-container table.table1 tbody td:first-child {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.rtl .panel-container table.table1 tbody td:last-child {
+  padding-left: 20px;
+  padding-right: 0;
+}
+.rtl #bday_day,
+.rtl #bday_month,
+.rtl #bday_year {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.rtl .tabs-container h2 {
+  float: right;
+}
+.rtl #tabs .tab,
+.rtl #minitabs .tab {
+  float: right;
+}
+.rtl #minitabs {
+  float: left;
+  margin-left: 7px;
+  margin-right: 0;
+}
+.rtl #minitabs .tab {
+  float: left;
+}
+.rtl #minitabs .tab > a {
+  margin-left: 0;
+  margin-right: 2px;
+}
+.rtl .responsive-tab .responsive-tab-link:before {
+  left: auto;
+  right: 10px;
+}
+.rtl #tabs .dropdown,
+.rtl #minitabs .dropdown {
+  margin-left: -2px;
+  margin-right: 0;
+}
+.rtl #minitabs .dropdown {
+  margin-left: -4px;
+  margin-right: 0;
+}
+.rtl #tabs .dropdown li {
+  text-align: left;
+}
+.rtl #minitabs .dropdown li {
+  text-align: right;
+}
+.rtl dd.pm_marked_colour,
+.rtl dd.pm_replied_colour,
+.rtl dd.pm_friend_colour,
+.rtl dd.pm_foe_colour {
+  padding-left: 0;
+  padding-right: 27px;
+}
+.rtl #gallery label {
+  float: right;
+}
+.rtl #display-panel-dd {
+  margin-left: 0;
+  margin-right: 17.35em;
+}
+.rtl #forumlist-inner {
+  float: right;
+}
+.rtl #sidebar {
+  float: left;
+}
+.rtl #sidebar + #forumlist {
+  margin: 0 0 0 245px;
+}
+.rtl .grid-2:first-child,
+.rtl .grid-3:first-child,
+.rtl .grid-4:first-child,
+.rtl .grid-5:first-child,
+.rtl .grid-6:first-child,
+.rtl .grid-7:first-child,
+.rtl .grid-8:first-child,
+.rtl .grid-9:first-child,
+.rtl .grid-10:first-child {
+  padding: 0 0 0 10px;
+}
+.rtl .grid-2:last-child,
+.rtl .grid-3:last-child,
+.rtl .grid-4:last-child,
+.rtl .grid-5:last-child,
+.rtl .grid-6:last-child,
+.rtl .grid-7:last-child,
+.rtl .grid-8:last-child,
+.rtl .grid-9:last-child,
+.rtl .grid-10:last-child {
+  padding: 0 10px 0 0;
+}
+.rtl .grid-2 {
+  float: right;
+}
+.rtl .grid-3 {
+  float: right;
+}
+.rtl .grid-4 {
+  float: right;
+}
+.rtl .grid-5 {
+  float: right;
+}
+.rtl .grid-6 {
+  float: right;
+}
+.rtl .grid-7 {
+  float: right;
+}
+.rtl .grid-8 {
+  float: right;
+}
+.rtl .grid-9 {
+  float: right;
+}
+.rtl .grid-10 {
+  float: right;
+}
+.rtl .dropdown-select {
+  padding-right: 20px;
+  padding-left: 52px;
+}
+.rtl .dropdown-select:after {
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-left: none;
+  right: auto;
+  left: 0;
+}
+.rtl .buttons,
+.rtl .buttons .button {
+  float: right;
+}
+.rtl .buttons .button {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.rtl .button-ar,
+.rtl .button-ra {
+  margin-right: 0;
+  margin-left: 7.5px;
+}
+.rtl .button-ar {
+  float: right;
+}
+.rtl .button-ra {
+  float: left;
+}
+.rtl .small-icon > a {
+  padding: 0 18px 0 0;
+}
+.rtl .font-icon > i,
+.rtl .font-icon > a > i {
+  margin-right: 0;
+  margin-left: 7.5px;
+}
+.rtl .contact-icon-pm,
+.rtl .contact-icon-email,
+.rtl .contact-icon-phpbb_website,
+.rtl .contact-icon-phpbb_facebook,
+.rtl .contact-icon-phpbb_twitter,
+.rtl .contact-icon-phpbb_skype,
+.rtl .contact-icon-phpbb_youtube,
+.rtl .contact-icon-phpbb_googleplus {
+  margin: 0 0 0 2.5px;
+}
+.rtl .posts-buttons {
+  right: auto;
+  left: 20px;
+}
+.rtl .posts-buttons li {
+  float: right;
+}
+.rtl .posts-buttons a {
+  border-radius: 2px 0 0 2px;
+  float: left;
+}
+.rtl .posts-buttons span {
+  border-radius: 0 3px 3px 0;
+  right: auto;
+  left: 33px;
+}
+.rtl .site-nav > ul {
+  float: left;
+}
+.rtl .site-nav > ul > li {
+  float: right;
+}
+.rtl .site-nav > ul > li.rightside {
+  float: left;
+}
+.rtl .site-nav > ul > .font-icon > i + span,
+.rtl .site-nav > ul > .font-icon > a > i + span {
+  margin-left: 0;
+  margin-right: 7.5px;
+}
+.rtl .nav-count {
+  margin-right: 0;
+  margin-left: 7.5px;
+}
+.rtl .nav-count > i {
+  margin-right: 7.5px;
+  margin-left: 0;
+}
+.rtl #header-avatar > img {
+  margin: 0 0 0 7.5px;
+}
+.rtl #site-logo {
+  float: right;
+  margin: 0 0 0 30px;
+}
+.rtl #site-menu {
+  float: right;
+}
+.rtl #site-menu > li {
+  float: right;
+  margin: 0 0 0 20px;
+}
+.rtl #site-menu > li:hover > ul {
+  right: 0;
+  left: auto;
+}
+.rtl #site-menu > li > ul {
+  right: -999px;
+  left: auto;
+}
+.rtl #site-menu > li > ul > li {
+  text-align: right;
+}
+.rtl #site-search {
+  float: right;
+}
+.rtl #site-search input {
+  float: right;
+}
+.rtl #site-search button {
+  float: left;
+}
+.rtl #site-search input {
+  padding: 0 20px 0 0;
+}
+.rtl #subhead-title {
+  float: right;
+}
+.rtl #subhead-minilist {
+  float: left;
+}
+.rtl #subhead-tabs {
+  float: right;
+}
+.rtl #subhead-tabs li {
+  float: right;
+}
+.rtl #subhead-tabs a {
+  float: right;
+  border-width: 1px 0 1px 1px;
+}
+.rtl #subhead-title-sm {
+  float: right;
+}
+.rtl #subhead-mods,
+.rtl #subhead-more {
+  float: right;
+}
+.rtl #breadcrumbs {
+  float: right;
+}
+.rtl #breadcrumbs-main {
+  float: right;
+}
+.rtl .breadcrumbs .crumb {
+  float: right;
+}
+.rtl #breadcrumbs-main li,
+.rtl #breadcrumbs li {
+  float: right;
+}
+.rtl .breadcrumbs .crumb:before {
+  content: "\f104";
+  right: -2px;
+  left: auto;
+}
+.rtl .breadcrumbs .crumb:first-child::before {
+  content: none;
+}
+.rtl .cfooter-social a {
+  float: right;
+  margin: 0 0 5px 5px;
+}
+.rtl .site-footer-nav > li {
+  float: right;
+  margin: 0 0 0 20px;
+}
+.rtl .site-footer-nav > li.rightside {
+  float: left;
+  margin: 0 20px 0 0;
+}
+.rtl .cfooter-contact li {
+  float: right;
+}
+.rtl .cfooter-contact li i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+@media (max-width: 1000px) {
+  .rtl #sidebar + #forumlist {
+    margin: 0;
+  }
+  .rtl .posts-buttons {
+    top: 0!important;
+    right: 0!important;
+  }
+}
+@media (max-width: 750px) and (min-width: 551px) {
+  .rtl dd.redirect {
+    padding-right: 0;
+  }
+  .rtl ul.topiclist dt {
+    margin-left: -225px;
+  }
+  .rtl ul.topiclist dt .list-inner {
+    margin-left: 225px;
+  }
+  .rtl .postprofile .has-avatar .avatar-container {
+    margin: 0 0 0 20px;
+  }
+  .rtl .has-profile .postbody h3 {
+    margin-left: 0;
+  }
+  .rtl .posts-buttons {
+    left: auto;
+    right: -10px;
+  }
+  .rtl .posts-buttons span {
+    left: auto;
+    right: 0;
+  }
+}
+@media (max-width: 750px) {
+  .rtl fieldset.display-options {
+    text-align: right;
+  }
+}
+@media (max-width: 600px) {
+  .rtl #site-search {
+    padding: 0 0 0 40px;
+  }
+  .rtl #site-search button {
+    left: 0;
+    right: auto;
+  }
+  .rtl #subhead-tabs {
+    left: auto;
+    right: 10px;
+  }
+  .rtl #breadcrumbs {
+    float: right;
+  }
+}
+@media (max-width: 550px) {
+  .rtl ul.topiclist dt {
+    margin-left: 0;
+  }
+  .rtl ul.topiclist dt .list-inner {
+    margin-left: 0;
+    padding-left: 40px;
+  }
+  .rtl .postprofile .has-avatar .avatar-container {
+    margin: 0 0 0 20px;
+  }
+  .rtl .has-profile .postbody h3 {
+    margin-left: 0;
+  }
+  .rtl .posts-buttons {
+    left: auto;
+    right: -10px;
+  }
+  .rtl .posts-buttons span {
+    left: auto;
+    right: 0;
+  }
+}
+.rtl li.reported dt {
+  box-shadow: -5px 0 0 #f3674a inset;
+}
+.rtl .pmlist li.pm_marked_colour dt {
+  box-shadow: -5px 0 0 #477bb8 inset;
+}
+.rtl dd.pm_marked_colour {
+  box-shadow: -17px 0 0 #477bb8 inset;
+}
+.rtl .pmlist li.pm_replied_colour dt {
+  box-shadow: -5px 0 0 #3c3c3c inset;
+}
+.rtl dd.pm_replied_colour {
+  box-shadow: -17px 0 0 #3c3c3c inset;
+}
+.rtl .pmlist li.pm_friend_colour dt {
+  box-shadow: -5px 0 0 #75b445 inset;
+}
+.rtl dd.pm_friend_colour {
+  box-shadow: -17px 0 0 #75b445 inset;
+}
+.rtl .pmlist li.pm_foe_colour dt {
+  box-shadow: -5px 0 0 #f3674a inset;
+}
+.rtl dd.pm_foe_colour {
+  box-shadow: -17px 0 0 #f3674a inset;
+}
+.rtl .chosen-container .chosen-drop {
+  left: auto;
+  right: -9999px;
+}
+.rtl .chosen-container.chosen-with-drop .chosen-drop {
+  left: auto;
+  right: 0;
+}
+.rtl .chosen-container-single .chosen-single {
+  padding: 0 20px 0 51px;
+}
+.rtl .chosen-container-single .chosen-single-with-deselect span {
+  margin-left: 38px;
+  margin-right: 0;
+}
+.rtl .chosen-container-single .chosen-single:after {
+  border-left: none;
+  border-right-style: solid;
+  border-right-width: 1px;
+  left: 0;
+  right: auto;
+}
+.rtl .chosen-container-single .chosen-search input[type="text"] {
+  padding: 4px 5px 4px 20px;
+}
+.rtl .chosen-container-single.chosen-container-single-nosearch .chosen-search {
+  left: auto;
+  right: -9999px;
+}
+.rtl .chosen-container .chosen-results {
+  text-align: right;
+}
+.rtl .chosen-container .chosen-results li.group-option {
+  padding-left: 0;
+  padding-right: 15px;
+}
+.rtl .chosen-container-multi .chosen-choices li {
+  float: right;
+}
+.rtl .chosen-container-multi .chosen-choices li.search-choice {
+  margin: 3px 0 3px 5px;
+  padding: 3px 5px 3px 20px;
+}
+.rtl .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  left: 3px;
+  right: auto;
+}
+.rtl .chosen-container-multi .chosen-choices li.search-choice-disabled {
+  padding-right: 1px;
+  border-left: 5px;
+}
+.rtl .chosen-container-active.chosen-with-drop .chosen-single div {
+  border-right: none;
+}
